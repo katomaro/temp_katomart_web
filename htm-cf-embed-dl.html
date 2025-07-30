@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO and Favicon -->
+    <title>Katomart | Hotmart Cloudfront Embed Downloader</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .code-block {
+            background-color: #1f2937; /* bg-gray-800 */
+            border: 1px solid #374151; /* border-gray-700 */
+            border-radius: 0.75rem; /* rounded-xl */
+            padding: 1rem;
+            color: #d1d5db; /* text-gray-300 */
+            font-family: monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200 antialiased">
+
+    <div class="container mx-auto px-6 py-12 md:py-20">
+
+        <!-- Header Section -->
+        <header class="text-center max-w-4xl mx-auto mb-12 md:mb-16">
+            <a href="index.html" class="inline-flex items-center gap-2 text-red-500 hover:text-red-400 transition-colors duration-300 mb-6 group">
+                <i class="fas fa-arrow-left group-hover:-translate-x-1 transition-transform"></i>
+                <span>Voltar para a página inicial</span>
+            </a>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+                <i class="fas fa-file-arrow-down text-red-500 text-5xl"></i>
+                <div class="text-center md:text-left">
+                    <h1 class="text-3xl md:text-4xl font-black text-white tracking-tight">Hotmart Cloudfront Embed Downloader</h1>
+                    <p class="text-lg text-gray-400">por Katomaro</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 max-w-6xl mx-auto">
+            
+            <!-- Left Column: Guide and How-to -->
+            <div class="lg:col-span-2">
+                <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-6 md:p-8">
+                    <!-- About Section -->
+                    <div class="mb-8">
+                        <h2 class="text-2xl font-bold text-white mb-3">Sobre a Ferramenta</h2>
+                        <p class="text-gray-400 leading-relaxed">
+                            O objetivo desta ferramenta é realizar o download de vídeos hospedados pelo player da Hotmart que são entregues via AWS CloudFront em sites externos (fora da área de membros principal). Muitas extensões de navegador bloqueiam o download de vídeos, por isso esta ferramenta foi criada é um atalho manual com pretensão de ser funcional para quem se encontra em cenário de desespero.
+                        </p>
+                    </div>
+
+                    <!-- How to Use Section -->
+                    <div>
+                        <h2 class="text-2xl font-bold text-white mb-4">Como Usar</h2>
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="font-bold text-lg text-white mb-2">1. Instale as dependências Python</h3>
+                                <p class="text-gray-400 mb-3">Navegue até a pasta do projeto e execute o comando abaixo no seu terminal:</p>
+                                <div class="code-block">pip install -r requirements.txt</div>
+                            </div>
+                             <div>
+                                <h3 class="font-bold text-lg text-white mb-2">2. Obtenha o URL do Manifesto (.m3u8)</h3>
+                                <p class="text-gray-400 mb-3">Abra o site com o vídeo, ative as ferramentas de desenvolvedor (F12), vá para a aba "Rede" (Network), filtre por <code>master</code>, clique com o botão direito da requisição do manifesto principal, e com copiar > URL como mostrado abaixo:</p>
+                                <img src="dev-tools-mpkg.png" alt="Exemplo de como encontrar o URL do manifesto .m3u8 nas ferramentas de desenvolvedor" class="mt-4 rounded-lg border border-gray-700 shadow-md w-full max-w-lg mx-auto">
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg text-white mb-2">3. Execute o Script</h3>
+                                <p class="text-gray-400 mb-3">Execute o script passando o URL do manifesto e o nome do arquivo de saída desejado:</p>
+                                <p class="text-gray-500 text-sm mt-2">Se executando da fonte (necessario para usuarios MACOS), siga as instrucoes do repositorio do projeto e lembre-se de abrir o programa com o comando <code>python main.py</code>, caso contrario, execute o arquivo binario (usuarios linux devem executar chmod +x antes de executar)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Downloads and Links -->
+            <div class="lg:col-span-1">
+                <div class="sticky top-12">
+                    <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-6">
+                        <h3 class="text-xl font-bold text-white mb-4 text-center">Recursos</h3>
+                        <div class="flex flex-col gap-4">
+                           <a href="https://github.com/katomaro/htm-cf-embed-dl/releases/latest/download/main.exe" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="inline-flex items-center justify-center gap-3 bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 transition-all duration-300 ease-in-out transform hover:-translate-y-1 w-full">
+                               <i class="fab fa-windows fa-lg"></i>
+                               <span>Download para Windows</span>
+                           </a>
+                           
+                           <a href="https://github.com/katomaro/htm-cf-embed-dl/releases/latest/download/main" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="inline-flex items-center justify-center gap-3 bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-50 transition-all duration-300 ease-in-out transform hover:-translate-y-1 w-full">
+                               <i class="fab fa-linux fa-lg"></i>
+                               <span>Download para Linux</span>
+                           </a>
+
+                           <a href="https://github.com/katomaro/htm-cf-embed-dl" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="inline-flex items-center justify-center gap-3 bg-gray-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-600 focus:ring-opacity-50 transition-all duration-300 ease-in-out transform hover:-translate-y-1 w-full">
+                               <i class="fab fa-github fa-lg"></i>
+                               <span>Ver no GitHub</span>
+                           </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

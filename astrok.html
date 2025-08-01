@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO e Favicon -->
-    <title>Katomart | Kurseduka-DL</title>
+    <title>Katomart | Astro-DL</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
 
     <!-- Font Awesome para ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQEWQDZ4P9"></script>
@@ -34,11 +34,9 @@
     </script>
 
     <style>
-        /* Estilo do corpo da página com a fonte Inter */
         body {
             font-family: 'Inter', sans-serif;
         }
-        /* Estilo customizado para blocos de código, mantido do design original */
         .code-block {
             background-color: #1f2937; /* bg-gray-800 */
             border: 1px solid #374151; /* border-gray-700 */
@@ -57,16 +55,15 @@
 
         <!-- Seção de Cabeçalho -->
         <header class="text-center max-w-4xl mx-auto mb-12 md:mb-16">
-            <a href="index.html" class="inline-flex items-center gap-2 text-red-500 hover:text-red-400 transition-colors duration-300 mb-6 group">
+            <a href="index.html" class="inline-flex items-center gap-2 text-blue-500 hover:text-blue-400 transition-colors duration-300 mb-6 group">
                 <i class="fas fa-arrow-left group-hover:-translate-x-1 transition-transform"></i>
                 <span>Voltar para a página inicial</span>
             </a>
             <!-- Ícone e Título -->
             <div class="flex flex-col md:flex-row items-center justify-center gap-4">
-                <!-- Ícone relevante para educação/cursos -->
-                <i class="fas fa-graduation-cap text-purple-500 text-5xl"></i>
+                <i class="fas fa-rocket text-blue-500 text-5xl"></i>
                 <div class="text-center md:text-left">
-                    <h1 class="text-3xl md:text-4xl font-black text-white tracking-tight">Kurseduka Downloader</h1>
+                    <h1 class="text-3xl md:text-4xl font-black text-white tracking-tight">Astro-DL</h1>
                     <p class="text-lg text-gray-400">por Katomaro</p>
                 </div>
             </div>
@@ -78,46 +75,24 @@
             <!-- Coluna da Esquerda: Guia e Instruções -->
             <div class="lg:col-span-2">
                 <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-6 md:p-8">
-                    <!-- Seção de Alerta de Segurança -->
-                    <div class="mb-8 bg-red-900/40 border border-red-600 rounded-xl p-6 flex flex-col sm:flex-row gap-4 items-start">
-                        <div class="flex-shrink-0">
-                            <i class="fas fa-exclamation-triangle text-red-400 text-3xl mt-1"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-red-300 mb-2">Alerta de Segurança Importante</h3>
-                            <p class="text-red-300 leading-relaxed">
-                                A plataforma Curseduca possui uma <strong class="text-red-200">vulnerabilidade de segurança crítica</strong>. É altamente recomendável que todos os alunos <strong class="text-red-200">alterem sua senha padrão imediatamente</strong>.
-                            </p>
-                            <p class="text-red-300 mt-3 leading-relaxed">
-                                Um endpoint público (<code class="bg-gray-900 text-red-200 px-2 py-1 rounded-md text-sm">https://application.curseduca.pro/platforms/config</code>) expõe a senha padrão de novas contas. Combinado com a listagem de usuários por IDs sequenciais, isso permite que um invasor tente acessar sistematicamente as contas de qualquer site que utilize a Curseduca.
-                            </p>
-                            <p class="text-red-300 mt-3 leading-relaxed">
-                              Esta plataforma também não possui DRM verdadeiro em seus anexos, eu respeito a requisição que adiciona uma watermark fraca em material, porém, é possível baixar o material de forma direta sem receber nenhuma watermar</strong>
-                            </p>
-                        </div>
-                    </div>
                     <!-- Seção Sobre -->
                     <div class="mb-8">
                         <h2 class="text-2xl font-bold text-white mb-3">Sobre a Ferramenta</h2>
                         <p class="text-gray-400 leading-relaxed">
-                            Esta ferramenta foi desenvolvida para facilitar o download de vídeos da plataforma Kurseduka para visualização offline. É uma solução simples e direta para estudantes e usuários que precisam de acesso ao conteúdo sem depender de uma conexão com a internet.
+                            Downloader minimalista para cursos da plataforma <a target="_blank" rel="noopener noreferrer" href="https://www.astronmembers.com.br"><strong>Astronmembers</strong></a>. Uma versão mais robusta se encontrará no <a href="https://github.com/katomaro/katomart" target="_blank" rel="noopener " class="font-semibold text-blue-400 underline hover:text-blue-300">Katomart</a>.
                         </p>
                     </div>
 
-                    <!-- Seção de Aviso Técnico -->
-                    <div class="mb-8 bg-orange-900/40 border border-orange-500 rounded-xl p-6 flex flex-col sm:flex-row gap-4 items-start">
-                        <div class="flex-shrink-0">
-                            <i class="fas fa-info-circle text-orange-400 text-3xl mt-1"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-orange-300 mb-2">Aviso Técnico: Conteúdo do YouTube</h3>
-                            <p class="text-orange-300 leading-relaxed">
-                                Para cursos com vídeos hospedados no <strong class="text-orange-200">YouTube</strong>, ou se você estiver usando uma <strong class="text-orange-200">VPN/Proxy</strong>, o `yt-dlp` pode enfrentar bloqueios.
-                            </p>
-                            <p class="text-orange-300 mt-3 leading-relaxed">
-                                Para evitar problemas, é necessário instalar o navegador <a href="https://vivaldi.com/" target="_blank" rel="noopener" class="font-semibold text-orange-200 underline hover:text-orange-100">Vivaldi</a> e fazer login com uma conta do YouTube nele. A ferramenta utilizará os cookies do Vivaldi para autenticar o download.
-                            </p>
-                        </div>
+                    <!-- Seção de Funcionalidades -->
+                    <div class="mb-8">
+                        <h2 class="text-2xl font-bold text-white mb-4">Funcionalidades</h2>
+                        <ul class="space-y-3 text-gray-400">
+                            <li class="flex items-start gap-3"><i class="fas fa-check-circle text-green-400 mt-1"></i><span>Faz login automático na plataforma Astronmembers.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check-circle text-green-400 mt-1"></i><span>Lista todos os cursos disponíveis no seu dashboard.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check-circle text-green-400 mt-1"></i><span>Permite baixar cursos individuais ou todos de uma vez.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check-circle text-green-400 mt-1"></i><span>Baixa vídeos, descrições e anexos organizadamente.</span></li>
+                            <li class="flex items-start gap-3"><i class="fas fa-check-circle text-green-400 mt-1"></i><span>Suporte para players: <strong>Panda Video</strong>, <strong>Hotmart</strong>, <strong>YouTube</strong> e <strong>Vimeo</strong>.</span></li>
+                        </ul>
                     </div>
 
                     <!-- Seção Como Usar -->
@@ -127,40 +102,41 @@
                             <!-- Opção 1: Executável -->
                             <div>
                                 <h3 class="font-bold text-lg text-white mb-2">Opção 1: Usando o Executável (Recomendado)</h3>
-                                <p class="text-gray-400 mb-3">Para usuários de <strong class="font-semibold text-white">Windows</strong> e <strong class="font-semibold text-white">Linux</strong>, a maneira mais fácil é baixar o executável correspondente na seção "Recursos" ao lado. Não é necessário instalar Python ou outras dependências.</p>
-                                <p class="text-gray-400">Após o download, abra seu terminal ou prompt de comando, navegue até a pasta onde salvou o arquivo e execute-o passando os parâmetros necessários.</p>
+                                <p class="text-gray-400 mb-3">Para usuários de <strong class="font-semibold text-white">Windows</strong> e <strong class="font-semibold text-white">Linux</strong>, a maneira mais fácil é baixar a versão mais recente na página de <a href="https://github.com/katomaro/Astro-DL/releases" target="_blank" rel="noopener" class="font-semibold text-blue-400 underline hover:text-blue-300">Releases</a>.</p>
+                                <ol class="list-decimal list-inside text-gray-400 space-y-2">
+                                    <li>Baixe a versão mais recente.</li>
+                                    <li>Execute o arquivo baixado.</li>
+                                    <li>Siga as instruções na tela.</li>
+                                </ol>
                             </div>
 
                             <!-- Opção 2: Código-Fonte -->
                             <div>
                                 <h3 class="font-bold text-lg text-white mb-2">Opção 2: Executando a partir do Código-Fonte (macOS/Desenvolvedores)</h3>
-                                <p class="text-gray-400 mb-4">Se você usa <strong class="font-semibold text-white">macOS</strong> ou é um desenvolvedor, siga os passos abaixo. É necessário ter <strong class="font-semibold text-white">Python 3.12</strong> instalado.</p>
+                                <p class="text-gray-400 mb-4">Se você usa <strong class="font-semibold text-white">macOS</strong> ou é um desenvolvedor, siga os passos abaixo. É necessário ter <strong class="font-semibold text-white">Python</strong> instalado.</p>
                                 <div class="space-y-6">
                                     <div>
                                         <h4 class="font-semibold text-white mb-2">1. Clone o Repositório</h4>
-                                        <p class="text-gray-400 mb-3">Primeiro, clone o repositório do GitHub para a sua máquina local:</p>
-                                        <div class="code-block">git clone https://github.com/katomaro/Kurseduka-dl.git
-cd Kurseduka-dl</div>
+                                        <div class="code-block">git clone https://github.com/katomaro/Astro-DL.git
+cd Astro-DL</div>
                                     </div>
                                     <div>
                                         <h4 class="font-semibold text-white mb-2">2. Crie e Ative um Ambiente Virtual (venv)</h4>
-                                        <p class="text-gray-400 mb-3">É uma boa prática isolar as dependências do projeto. Crie um ambiente virtual e ative-o:</p>
-                                        <div class="code-block"># Para macOS/Linux
-python3 -m venv venv
-source venv/bin/activate
-
-# Para Windows
+                                        <div class="code-block"># Crie um ambiente virtual
 python -m venv venv
-.\\venv\\Scripts\\activate</div>
+
+# Ative no Windows
+call venv/scripts/activate
+
+# Ative no macOS/Linux
+source venv/bin/activate</div>
                                     </div>
                                     <div>
                                         <h4 class="font-semibold text-white mb-2">3. Instale as dependências</h4>
-                                        <p class="text-gray-400 mb-3">Com o ambiente virtual ativado, execute o comando abaixo para instalar os pacotes necessários:</p>
                                         <div class="code-block">pip install -r requirements.txt</div>
                                     </div>
                                     <div>
                                         <h4 class="font-semibold text-white mb-2">4. Execute o Script</h4>
-                                        <p class="text-gray-400 mb-3">Finalmente, execute o script com Python:</p>
                                         <div class="code-block">python main.py</div>
                                     </div>
                                 </div>
@@ -176,8 +152,7 @@ python -m venv venv
                     <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-6">
                         <h3 class="text-xl font-bold text-white mb-4 text-center">Recursos</h3>
                         <div class="flex flex-col gap-4">
-                           <!-- Link para download - Windows -->
-                           <a href="https://github.com/katomaro/htm-cf-embed-dl/releases/download/v1.0.0/HtmCfEmbedDL-v1.0.0-windows-x86_64.exe" 
+                           <a href="https://github.com/katomaro/Astro-DL/releases/download/v1.0.0/AstroDL-v1.0.0-windows-x86_64.exe" 
                                target="_blank" 
                                rel="noopener" 
                                class="inline-flex items-center justify-center gap-3 bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 transition-all duration-300 ease-in-out transform hover:-translate-y-1 w-full">
@@ -185,17 +160,15 @@ python -m venv venv
                                <span>Download para Windows</span>
                            </a>
                            
-                           <!-- Link para download - Linux -->
-                           <a href="https://github.com/katomaro/htm-cf-embed-dl/releases/download/v1.0.0/HtmCfEmbedDL-v1.0.0-linux-x86_64" 
+                           <a href="https://github.com/katomaro/Astro-DL/releases/download/v1.0.0/AstroDL-v1.0.0-linux-x86_64" 
                                target="_blank" 
                                rel="noopener" 
-                               class="inline-flex items-center justify-center gap-3 bg-purple-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-purple-700 focus:outline-none focus:ring-4 focus:ring-purple-500 focus:ring-opacity-50 transition-all duration-300 ease-in-out transform hover:-translate-y-1 w-full">
+                               class="inline-flex items-center justify-center gap-3 bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-50 transition-all duration-300 ease-in-out transform hover:-translate-y-1 w-full">
                                <i class="fab fa-linux fa-lg"></i>
                                <span>Download para Linux</span>
                            </a>
 
-                           <!-- Link para o repositório no GitHub -->
-                           <a href="https://github.com/katomaro/Kurseduka-dl" 
+                           <a href="https://github.com/katomaro/Astro-DL" 
                                target="_blank" 
                                rel="noopener" 
                                class="inline-flex items-center justify-center gap-3 bg-gray-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-600 focus:ring-opacity-50 transition-all duration-300 ease-in-out transform hover:-translate-y-1 w-full">
